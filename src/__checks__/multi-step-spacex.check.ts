@@ -1,8 +1,8 @@
 import * as path from 'path'
 import { MultiStepCheck } from 'checkly/constructs'
-import { smsChannel, emailChannel } from '../alert-channels'
+import { emailChannel } from '../alert-channels'
 
-const alertChannels = [smsChannel, emailChannel]
+const alertChannels = [ emailChannel]
 
 /*
 * In this example, we utilize the SpaceX public API to construct a series of chained requests, with the goal of confirming

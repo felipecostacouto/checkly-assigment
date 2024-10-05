@@ -1,9 +1,9 @@
 import * as path from 'path'
 import { BrowserCheck } from 'checkly/constructs'
-import { smsChannel, emailChannel } from '../alert-channels'
+import { emailChannel } from '../alert-channels'
 import { websiteGroup } from './website-group.check'
 
-const alertChannels = [smsChannel, emailChannel]
+const alertChannels = [ emailChannel]
 
 /*
 * In this example, we bundle all basic checks needed to check the Checkly homepage. We explicitly define the Browser

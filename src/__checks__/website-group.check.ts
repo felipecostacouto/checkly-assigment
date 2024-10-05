@@ -1,6 +1,6 @@
 import { AlertEscalationBuilder, CheckGroup, RetryStrategyBuilder } from 'checkly/constructs'
-import { smsChannel, emailChannel } from '../alert-channels'
-const alertChannels = [smsChannel, emailChannel]
+import { emailChannel } from '../alert-channels'
+const alertChannels = [emailChannel]
 /*
 * In this example, we bundle checks using a Check Group. We add checks to this group in two ways:
 * 1. By passing the `CheckGroup` object for the `group` property of the check.
