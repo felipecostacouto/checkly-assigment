@@ -7,7 +7,10 @@
 #
 #  You can of course trigger the Checkly CLI in other workflows or steps inside your GH Action configuration.
 name: 'checkly'
-on: [deployment_status]
+on: 
+  push:
+    branches:
+      - main
 
 # Set the necessary credentials and export variables we can use to instrument our test run. Use the ENVIRONMENT_URL
 # to run your checks against staging, preview or production.
