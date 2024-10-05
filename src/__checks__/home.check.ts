@@ -1,9 +1,10 @@
-import * as path from 'path'
+/*import * as path from 'path'
 import { BrowserCheck } from 'checkly/constructs'
 import { emailChannel } from '../alert-channels'
 import { websiteGroup } from './website-group.check'
 
 const alertChannels = [ emailChannel]
+*/
 
 /*
 * In this example, we bundle all basic checks needed to check the Checkly homepage. We explicitly define the Browser
@@ -11,6 +12,7 @@ const alertChannels = [ emailChannel]
 * We can also add more checks into one file, in this case to cover a specific API call needed to hydrate the homepage.
 */
 
+/*
 // We can define multiple checks in a single *.check.ts file.
 new BrowserCheck('homepage-browser-check', {
   name: 'Home page',
@@ -31,3 +33,4 @@ new BrowserCheck('login-browser-check', {
   },
   runParallel: true,
 })
+*/

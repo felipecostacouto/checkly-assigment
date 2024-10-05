@@ -1,4 +1,7 @@
-/*@global request */
+// Declare request as global
+declare const request: {
+  headers: { [key: string]: string }
+}
 
 /**
  * This setup script example shows how you can import other files, use async functions and instrument the globals

@@ -13,8 +13,8 @@ const alertChannels = [emailChannel]
 * You can use either or both. In this example we show option 1.
 **/
 
-export const websiteGroup = new CheckGroup('website-check-group-1', {
-  name: 'Website Group',
+export const websiteGroup = new CheckGroup('Browser-check-group-1', {
+  name: 'Browser Checks Group',
   activated: true,
   muted: false,
   runtimeId: '2024.02',
