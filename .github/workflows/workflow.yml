@@ -3,7 +3,6 @@
 #
 # - Runs after code is pushed to the main branch
 # - Runs Checkly tests using the Checkly CLI
-# - Deploys the checks if the tests pass and it's in the production environment
 
 name: 'checkly-push-to-main'
 on: 
