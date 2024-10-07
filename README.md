@@ -24,6 +24,7 @@ if it's your first time running the an Checkly CLI project, please consult this 
 - [Customer Requirements](#customer-requirements)
 - [Workflow breakdown](#workflow-breakdown)
 - [Project Structure](#project-structure)
+- [Customizing the Workflow](#customizing-the-workflow)
 
 ## Prerequisites
 
@@ -79,7 +80,7 @@ if it's your first time running the an Checkly CLI project, please consult this 
 
 1. **I would like to have one folder where all my Playwright tests live. If I add a new one, it should be picked up by the CLI when I deploy to Checkly.**
 
-    - **Answer**: All Playwright tests are located in the __checks__ folder, new tests will be automatically detected by the workflow upon deployment to Checkly.The checkMatch and testMatch properties in checkly.config.ts are used to automatically include tests and checks based on the file patterns defined:
+    - **Answer**: All Playwright tests are located in the __checks__ folder, new tests will be automatically detected by the workflow upon deployment to Checkly.The checkMatch and testMatch properties in **checkly.config.ts** are used to automatically include tests and checks based on the file patterns defined:
     
     - **testMatch**: Matches .spec.ts files for Browser Checks. Located on line 47.
     - **checkMatch**: Matches .check.ts files containing Checkly-specific checks. Located on line 34.
